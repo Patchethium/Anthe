@@ -3,6 +3,7 @@
 </script>
 
 <main>
+	<p>Hi Mom</p>
 	
 </main>
 
