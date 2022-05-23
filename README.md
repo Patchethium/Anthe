@@ -1,8 +1,8 @@
 # Anthe
 
-Anthe is an out-of-box TTS software focuses on end user experience, featured with completly offline processing, tunable voice synthesis and characterized voice banks.  
+Anthe is an out-of-box TTS software focuses on end user experience, featured with completely offline processing, tune-able voice synthesis and characterized voice banks.  
 
-This repository maintains its GUI, which is buit with [tauri](https://github.com/tauri-apps/tauri), [svelte](https://github.com/sveltejs/svelte) and [vite](https://github.com/vitejs/vite).  
+This repository maintains its GUI, which is built with [tauri](https://github.com/tauri-apps/tauri), [svelte](https://github.com/sveltejs/svelte) and [vite](https://github.com/vitejs/vite).  
 
 If you're looking for where the voice synthesis actually happens, check out [Anthe-training](https://github.com/Patchethium/Anthe-training).  
 
@@ -10,6 +10,14 @@ This project is still in its **very** early stage so don't expect you'd find any
 
 ## Development
 
+We recommend to use [Visual Studio Code](https://code.visualstudio.com/) or its OSS alternative [VSCodium](https://vscodium.com/) for the best developing experience. Also, install the following extensions:
+
+- Svelte for VS Code
+- rust-analyzer
+- PostCSS Language Support
+- ESLint
+- Tailwind CSS IntelliSense
+- Tauri
 ### Fork this repository
 
 You may find the fork button on the top right corner.
@@ -64,7 +72,7 @@ Note: If your rust-analyzer reports an error in `src-tauri/src/main.rs`
 
 create a directory `dist` at the project root or build the project once and it'll disappear.
 
-## Licence
+## License
 
 This repository (GUI of Anthe) is released under GNU General Public License Version 3.  
 
@@ -74,6 +82,6 @@ Anthe<sup>[\[wikipedia\]](https://en.wikipedia.org/wiki/Anthe_(moon))</sup>(/ËˆÃ
 
 ## Q&A
 
-> So, now we don't use a UI framework?
+> So, we don't use a UI framework?
 
 Yes, the community of Svelte is still young, I rather style every component in tailwind css.  
