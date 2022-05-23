@@ -6,7 +6,7 @@ This repository maintains its GUI, which is built with [tauri](https://github.co
 
 If you're looking for where the voice synthesis actually happens, check out [Anthe-training](https://github.com/Patchethium/Anthe-training).  
 
-This project is still in its **very** early stage so don't expect you'd find anything useful here for now.  
+This project is still at its **very** early stage, don't expect you'd find anything useful here for now.  
 
 ## Development
 
@@ -18,6 +18,8 @@ We recommend to use [Visual Studio Code](https://code.visualstudio.com/) or its 
 - ESLint
 - Tailwind CSS IntelliSense
 - Tauri
+
+Note: You may need to download and install some of the extensions manually if you're using VSCodium. 
 ### Fork this repository
 
 You may find the fork button on the top right corner.
@@ -61,7 +63,7 @@ npm run tauri build
 yarn tauri build
 ```
 
-Note: Don't create pull request on your `main` or `master` branch, create another branch like `feature/buttons` and commit there.  
+Note: Don't commit on your `main` or `master` branch, create another branch like `feature/buttons` and commit there.  
 
 Note: If your rust-analyzer reports an error in `src-tauri/src/main.rs`
 ```Rust
@@ -70,7 +72,7 @@ Note: If your rust-analyzer reports an error in `src-tauri/src/main.rs`
     .expect("error while running tauri application");
 ```
 
-create a directory `dist` at the project root or build the project once and it'll disappear.
+create a directory `dist` at the project root or build the project once, restart the editor and it'll disappear.
 
 ## License
 
