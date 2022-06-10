@@ -76,7 +76,7 @@ create a directory `dist` at the project root or build the project once, restart
 
 ## License
 
-This repository (GUI of Anthe) is released under GNU General Public License Version 3.  
+This repository (GUI of Anthe) is released under Apache License, version 2.0.  
 
 ## About the name
 
