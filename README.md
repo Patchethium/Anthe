@@ -4,7 +4,7 @@ Anthe is an out-of-box TTS software focuses on end user experience, featured wit
 
 This repository maintains its GUI, which is built with [tauri](https://github.com/tauri-apps/tauri), [svelte](https://github.com/sveltejs/svelte) and [vite](https://github.com/vitejs/vite).  
 
-If you're looking for where the voice synthesis actually happens, check out [Anthe-training](https://github.com/Patchethium/Anthe-training).  
+If you're looking for where the voice synthesis actually happens, check out [Anthium](https://github.com/Patchethium/Anthium).  
 
 This project is still at its **very** early stage, don't expect you'd find anything useful here for now.  
 
