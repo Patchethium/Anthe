@@ -1,12 +1,10 @@
 # Anthe
 
-Anthe is an out-of-box TTS software focuses on end user experience, featured with completely offline processing, tune-able voice synthesis and characterized voice banks.  
+Anthe is an out-of-box TTS software focuses on end user experience, featured with completely offline processing, tune-able voice synthesis and characterized voice banks.
 
-This repository maintains its GUI.
+This repository maintains its GUI and inference code. If you want to train a model, check out [Anthium](https://github.com/Patchethium/Anthium).
 
-If you're looking for where the voice synthesis actually happens, check out [Anthium](https://github.com/Patchethium/Anthium).  
-
-This project is still at its **very** early stage, don't expect you'd find anything useful here for now.  
+This project is still at its **very** early stage, don't expect you'd find anything useful here for now.
 
 ## Development
 
@@ -19,10 +17,15 @@ We recommend to use [Visual Studio Code](https://code.visualstudio.com/) or its 
 - Tailwind CSS IntelliSense
 - Tauri
 
-Note: You may need to download and install some of the extensions manually if you're using VSCodium. 
+Note: You may need to download and install some of the extensions manually if you're using VSCodium.
+
 ### Fork this repository
 
 You may find the fork button on the top right corner.
+
+## Prerequisites
+
+The tech stack we use is Rust, 
 
 ### Clone your own fork
 ```sh
@@ -32,52 +35,41 @@ cd Anthe
 ```
 ### Install dependencies
 
-I use pnpm, but npm and yarn also works
+We use [pnpm](https://pnpm.io/), node version 18.4.0.
 
 ```sh
-# pnpm
 pnpm install
-# npm
-npm install
-# yarn
-yarn add
 ```
 ### Launch
 
 ```sh
-# pnpm
 pnpm tauri dev
-# npm
-npm run tauri dev
-# yarn
-yarn tauri dev
 ```
 
 ### Build
 ```sh
-# pnpm
 pnpm tauri build
-# npm
-npm run tauri build
-# yarn
-yarn tauri build
 ```
 
-Note: Don't commit on your `main` or `master` branch, create another branch like `feature/buttons` and commit there.  
+Note: Avoid committing on the `master` branch, create another branch like `feature/buttons` and apply your change there.
 
 Note: If your rust-analyzer reports an error in `src-tauri/src/main.rs`
 ```Rust
-  tauri::Builder::default()
-    .run(tauri::generate_context!()) // error: ... "../dist" doesn't exist ...
-    .expect("error while running tauri application");
+tauri::Builder::default()
+  .run(tauri::generate_context!()) // error: ... "../dist" doesn't exist ...
+  .expect("error while running tauri application");
 ```
 
-create a directory `dist` at the project root or build the project once, restart the editor and it'll disappear.
+create a directory `dist` at the project root or build the project once, then restart the editor.
 
 ## License
 
-This repository (Anthe) is released under Apache License, version 2.0.  
+This repository (GUI of Anthe) is released under Apache License version 2.0.
+
+## Contribution
+
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the Apache License version 2.0, shall be licensed as described above, without any additional terms or conditions.
 
 ## About the name
 
-Anthe<sup>[\[wikipedia\]](https://en.wikipedia.org/wiki/Anthe_(moon))</sup>(/ˈænθiː/;アンテ) is the name of Saturn XLIX, a very small natural satellite of Saturn, named after one of the Alkyonides; the name means flowery.  
+Anthe<sup>[\[wikipedia\]](https://en.wikipedia.org/wiki/Anthe_(moon))</sup>(/ˈænθiː/, アンテ) is also known as Saturn XLIX, a very small natural satellite of Saturn, named after one of the Alkyonides; the name means flowery.
