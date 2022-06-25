@@ -2,7 +2,7 @@
 
 Anthe is an out-of-box TTS software focuses on end user experience, featured with completely offline processing, tune-able voice synthesis and characterized voice banks.  
 
-This repository maintains its GUI, which is built with [tauri](https://github.com/tauri-apps/tauri), [svelte](https://github.com/sveltejs/svelte) and [vite](https://github.com/vitejs/vite).  
+This repository maintains its GUI.
 
 If you're looking for where the voice synthesis actually happens, check out [Anthium](https://github.com/Patchethium/Anthium).  
 
@@ -76,14 +76,8 @@ create a directory `dist` at the project root or build the project once, restart
 
 ## License
 
-This repository (GUI of Anthe) is released under Apache License, version 2.0.  
+This repository (Anthe) is released under Apache License, version 2.0.  
 
 ## About the name
 
 Anthe<sup>[\[wikipedia\]](https://en.wikipedia.org/wiki/Anthe_(moon))</sup>(/ˈænθiː/;アンテ) is the name of Saturn XLIX, a very small natural satellite of Saturn, named after one of the Alkyonides; the name means flowery.  
-
-## Q&A
-
-> So, we don't use a UI framework?
-
-Yes, the community of Svelte is still young, I rather style every component in tailwind css.  
