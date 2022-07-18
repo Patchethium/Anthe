@@ -23,10 +23,6 @@ Note: You may need to download and install some of the extensions manually if yo
 
 You may find the fork button on the top right corner.
 
-## Prerequisites
-
-The tech stack we use is Rust, 
-
 ### Clone your own fork
 ```sh
 git clone https://github.com/${your_username}/Anthe.git
